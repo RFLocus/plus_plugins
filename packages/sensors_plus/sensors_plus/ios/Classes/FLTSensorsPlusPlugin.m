@@ -102,6 +102,7 @@ CMMotionManager *_motionManager;
 void _initMotionManager() {
   if (!_motionManager) {
     _motionManager = [[CMMotionManager alloc] init];
+    _motionManager.deviceMotionUpdateInterval = 20.0 / 1000.0;
   }
 }
 
